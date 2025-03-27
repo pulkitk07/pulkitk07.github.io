@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulkit Khursija - Home</title>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: rgb(206, 197, 197);
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .preloader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .preloader h1 {
+            font-size: 80px;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            border-right: 2px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(50, end) forwards, blink 0.2s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 50%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .hidden {
+            display: none;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #222;
+            color: white;
+            padding: 15px 20px;
+        }
+        .navbar .brand {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .navbar .brand i {
+            margin-right: 10px;
+            color: gold;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+        .text-content {
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .profile-image {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            margin-right: 15px;
+            font-size: 16px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .links a:hover {
+            transform: translateX(5px);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            background-color: #222;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+        }
+        footer {
+            background-color: #f2e9e9;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').classList.add('hidden');
+                document.querySelector('.main-content').style.display = 'block';
+            }, 3500);
+        };
+    </script>
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="images/i1.jpeg" alt="Hi Image" class="profile-image">
+        <h1> Pulkit Khursija 💻</h1>
+    </div>
+
+    <nav class="navbar">
+        <div class="brand">
+            <i class="fas fa-home"></i>
+            <a href="index.html">Pulkit Khursija</a>
+        </div>
+        
+    </nav>
+
+
+
+    <div class="container">
+        <div class="text-content">
+            <h2>📍 Dayton, Ohio 🇺🇲</h2>
+            <h1>Hi there,</h1>
+            <h1> I'm Pulkit Khursija</h1>
+            <p>
+                A well-accomplished Strategic Project Manager with direct working experience in IOT and AI Products. Self-motivated and results-oriented individual with a strong go-to-market experience and sound business acumen. Proven success in identifying growth opportunities, strategic positioning of different products, and communicating the value proposition through campaigns and integrated marketing programs.
+            </p>
+            <div class="links">
+                <a href="about.html">About →</a>
+                <a href="experience.html">Experience →</a>
+                <a href="education.html">Education →</a>
+                <a href="skills.html">Skills →</a>
+            </div>
+            <div class="links">
+                <a href="ProdMgr_PulkitKhursija.pdf" class="btn btn-primary btn-lg" download>
+                    Download Resume PDF →
+                </a>
+                
+            </div>
+        </div>
+        <img src="images/p2.jpg" alt="Pulkit Khursija" class="profile-image">
+    </div>
+
+    <footer class=>
+        <p>&copy; 2025 Pulkit Khursija. All rights reserved.</p>
+    </footer>
+
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/pulkit-khursija/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/pulkitk07" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.kaggle.com/pulkitkhursija" target="_blank"><i class="fab fa-kaggle"></i></a>
+        <a href="mailto:pulkitkhursija@live.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.researchgate.net/profile/Pulkit-Khursija"><i class="fas fa-book"></i></a>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulkit Khursija - Education</title>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: rgb(206, 197, 197);
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+       
+        .hidden {
+            display: none;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #222;
+            color: white;
+            padding: 15px 20px;
+        }
+        .navbar .brand {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .navbar .brand i {
+            margin-right: 10px;
+            color: gold;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+        .text-content {
+            margin: 10px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            
+        }
+        .profile-image {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            margin-right: 15px;
+            font-size: 16px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .links a:hover {
+            transform: translateX(5px);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            background-color: #222;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+        }
+        .education-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+            max-width: 1000px; /* Controls the max width for three cards per row */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Ensure three cards per row */
+        .card {
+            width: 300px; /* Maintain card width */
+            height: 400px;
+            perspective: 1000px;
+            cursor: pointer;
+            flex-shrink: 0; /* Prevents shrinking */
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 950px) { /* Show two cards per row */
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) { /* Show one card per row */
+            .card {
+                width: 100%;
+            }
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .card-front {
+            background: #fff;
+            border: 2px solid #000;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-back {
+            background: #222;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        footer {
+            background-color: #f2e9e9;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+   
+
+    <nav class="navbar">
+        <div class="brand">
+            <i class="fas fa-home"></i>
+            <a href="index.html">Pulkit Khursija</a> 
+        </div>
+        
+    </nav>
+
+    <div class="text-content">
+            
+            
+        <h1>EDUCATION</h1>
+         
+    </div>
+
+    <section class="education-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Master's in Computer Science 🇺🇲</div>
+                <div class="card-back">University: Wright State University<br>Year: 2021 - 2022<br>Majors: Computer Science</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">Bachelor's in Computer Science 🇮🇳</div>
+                <div class="card-back">University: A.P.J. Abdul Kalam Technical University<br>Year: 2015 - 2019<br>Majors: Computer Science</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-content">
+            
+            
+        <div class="links">
+            <a href="index.html">Home →</a>
+            <a href="about.html">About →</a>
+            <a href="experience.html">Experience →</a>
+            <a href="skills.html">Skills →</a>
+        </div>
+        
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; 2025 Pulkit Khursija. All rights reserved.</p>
+    </footer>
+
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/pulkit-khursija/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/pulkitk07" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.kaggle.com/pulkitkhursija" target="_blank"><i class="fab fa-kaggle"></i></a>
+        <a href="mailto:pulkitkhursija@live.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.researchgate.net/profile/Pulkit-Khursija"><i class="fas fa-book"></i></a>
+    </div>
+
+
+    
+</body>
+</html>
